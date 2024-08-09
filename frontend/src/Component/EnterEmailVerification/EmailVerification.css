@@ -1,0 +1,86 @@
+.CenteredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container-verification {
+    backdrop-filter: blur(7px) saturate(0%);
+    -webkit-backdrop-filter: blur(13px) saturate(0%);
+    background-color: rgba(255, 170, 67, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+.header-verification {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.paragraph-verification {
+    text-align: center;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+.label-verification {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input-verification {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button-verify {
+    background-color: #c67700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button-verify:hover {
+    background-color: #834e00;
+}
+
+.button-cancel {
+    background-color: #c67700;
+    color: white;
+    margin-left: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button-cancel:hover {
+    background-color: #834e00;
+}
+
+@media screen and (max-width: 600px) {
+    .container-verification {
+        width: 90%;
+    }
+
+    .header-verification {
+        font-size: 1.5em;
+    }
+}

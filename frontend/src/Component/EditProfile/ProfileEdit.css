@@ -1,0 +1,11 @@
+.EC{
+    width: 100%;
+    border: none;
+    height: 400px;
+}
+
+.butEdit{
+    margin-top: 20px;
+    margin-left: 500px;
+    align-items: center;
+}

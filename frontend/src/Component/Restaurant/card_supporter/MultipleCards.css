@@ -1,0 +1,46 @@
+.best_res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1000px;
+  min-width: 520px;
+}
+
+
+.card_rees {
+  display: flex;
+  margin-top: 15px;
+  gap: 5px;
+  padding-left: 30px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 1200px) {
+  .card-hover {
+    width: 45%; 
+  }
+}
+
+.card-hover__extra {
+  width: 100%; 
+}
+
+
+.article-card, .card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.specific-restaurant{
+  display: flex;
+  margin-top: 15px;
+  gap: 5px;
+  padding-left: 30px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}

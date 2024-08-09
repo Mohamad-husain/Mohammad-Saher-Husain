@@ -1,0 +1,318 @@
+.rowAccount {
+    display: flex;
+    margin-top: -5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.titAccount {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: start;
+}
+
+.lineAccount {
+    margin-bottom: 20px;
+    color: #3605fb;
+    
+}
+
+.form-field-2 {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test2Account {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.form-field-3 {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test3Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.form-field-4 {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test4Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.form-field-5 {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test5Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.form-field-6 {
+    width: 50px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test6Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.form-field-7 {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.test7Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.test8Account {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.password-field {
+    --c-text: #5A5A64;
+    --c-text-light: #b6a1a1;
+    --c-text-selection: #3605fb;
+    --c-background: #fff;
+    --c-background-selection: rgba(9, 171, 195, 0.15);
+    --c-border: #a4a4a4;
+    --c-border-hover: #c2c2c2;
+    --c-border-active: #09ABC3;
+    --c-shadow: rgba(41, 41, 86, 0.06);
+    --c-shadow-active: rgba(9, 171, 195, 0.25);
+    --eye-background: 0;
+    --eye-offset: 3px;
+    --eye-wrapper-y: 0;
+    --eye-y: 0;
+    --eye-x: 0;
+    --eye-s: 1;
+    width: 220px;
+    position: relative;
+    border-radius: 7px;
+    background: var(--c-background);
+    box-shadow: inset 0 0 0 1px var(--border, var(--c-border)), 0px 1px 3px var(--shadow, var(--c-shadow));
+    transition: box-shadow .25s;
+
+    &:hover {
+        --border: var(--c-border-hover);
+        --eye-duration: .05s;
+    }
+
+    &:focus-within {
+        --border: var(--c-border-active);
+        --shadow: var(--c-shadow-active);
+    }
+
+    .AccountInput,
+    .AccountButton {
+        outline: none;
+        background: none;
+        border: none;
+    }
+
+    .AccountInput {
+        display: block;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 21px;
+        height: 45px;
+        color: var(--c-text);
+        padding-bottom: 13px;
+        padding-left: 5px;
+        transform: translateY(var(--y, var(--default-y, 0))) translateZ(0);
+        opacity: var(--o, var(--default-o, 1));
+        pointer-events: var(--pe, var(--default-pe, auto));
+        transition: filter .35s, transform .4s, opacity .25s;
+
+        &::placeholder {
+            color: var(--c-text-light);
+            transition: color .25s;
+        }
+
+        &::selection {
+            color: var(--c-text-selection);
+            background: var(--c-background-selection);
+        }
+
+        &:focus,
+        &:hover {
+            &::placeholder {
+                color: var(--c-text);
+            }
+        }
+
+        &:not(.clear) {
+            width: 100%;
+        }
+
+        &.clear {
+            --y: var(--clear-y, 12px);
+            --o: var(--clear-o, 0);
+            --pe: var(--clear-pe, none);
+            position: absolute;
+
+        }
+    }
+
+    .AccountButton {
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        padding: 11px;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        transform: scale(var(--s, 1));
+        color: var(--c-text-light);
+        transition: color .25s, transform .15s;
+
+        &:hover {
+            color: var(--c-text);
+        }
+
+        &:active {
+            --s: .95;
+        }
+
+        .AccountSvg {
+            display: block;
+            width: 23px;
+            height: 23px;
+            pointer-events: none;
+
+            .top,
+            .bottom,
+            .lashes {
+                fill: none;
+                stroke: currentColor;
+                stroke-width: 1.5px;
+                stroke-linecap: round;
+            }
+
+            .lashes {
+                stroke-dasharray: 3px;
+                stroke-dashoffset: var(--eye-offset);
+            }
+
+            .top {
+                fill: var(--c-background);
+                fill-opacity: var(--eye-background);
+            }
+
+            .eye {
+                fill: currentColor;
+                transform-origin: 10.5px 13.5px;
+                transform: translate(var(--eye-x), var(--eye-y)) scale(var(--eye-s)) translateZ(0);
+                transition: transform var(--eye-duration, .3s);
+            }
+        }
+    }
+
+    &.show {
+        --default-y: -12px;
+        --default-o: 0;
+        --default-pe: none;
+        --clear-y: 0;
+        --clear-o: 1;
+        --clear-pe: auto;
+    }
+}
+
+.password-field {
+    width: 300px;
+    height: 40px;
+    padding: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.butAccount {
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.tt {
+    color: #c2c2c2;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+.flex-grid-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.fuller-button {
+    color: rgb(3, 3, 3);
+    background: none;
+    border-radius: 0;
+    padding: 1em 4em;
+    letter-spacing: 0.20em;
+    font-size: 0.9em;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    margin: 1em;
+
+    &.blue {
+        box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5), 0 0 1em rgba(0, 170, 170, 0.5);
+        border: #0dd solid 2px;
+        margin-left: 160px;
+    }
+
+    &.blue:hover {
+        background-color: #0dd;
+        box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
+    }
+
+    &.red {
+        box-shadow: inset 0 0 1em rgba(251, 81, 81, 0.4), 0 0 1em rgba(251, 81, 81, 0.4);
+        border: #fb5454 solid 2px;
+    }
+
+    &.red:hover {
+        background-color: #fb5454;
+        box-shadow: inset 0 0 0 rgba(251, 81, 81, 0.4), 0 0 1.5em rgba(251, 81, 81, 0.6);
+    }
+}

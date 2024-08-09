@@ -1,0 +1,104 @@
+.ContainerLogIn {
+    backdrop-filter: blur(7px) saturate(0%);
+    -webkit-backdrop-filter: blur(13px) saturate(0%);
+    background-color: rgba(253, 176, 82, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.LogInHeaderOne {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.HeaderThreeLogIn {
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.FormLogIn {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.LabelLogIn {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.InputUsernameLogIn,
+.InputPasswordLogIn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.InputSubmitLogIn {
+    padding: 10px 20px;
+    background-color: #ba6700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.InputSubmitLogIn:hover {
+    background-color: #965300;
+}
+
+.passwordContainerLogIn {
+    position: relative;
+}
+
+.passwordIconLogIn {
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#password {
+    padding-right: 30px;
+}
+
+.passwordIconLogIn.visible path {
+    fill: none;
+    stroke: #ff8400;
+    stroke-width: 2px;
+}
+
+.LogInLinks {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.LogInLinks a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.LogInLinks a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.span-space {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.CenteredContainer {
+    background-image: url("./WhatsApp\ Image\ 2024-04-08\ at\ 8.52.07\ PM.jpeg");
+}

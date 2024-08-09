@@ -1,0 +1,24 @@
+.card_rees , .Name_of_citiy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  max-width: 1180px; 
+  margin: auto; 
+  min-width: 550px;
+  margin-top: 20px;
+
+}
+@media (max-width: 768px) {
+  .card_rees {
+    
+    max-width: 590px; 
+
+  }
+
+  .card {
+    
+  
+    width: 210px; 
+
+  }
+}

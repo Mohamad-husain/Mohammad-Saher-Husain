@@ -1,0 +1,132 @@
+.container-food {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content-food {
+    margin-top: 20px;
+}
+
+.section-resturant {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resturant-image-container {
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 100%;
+}
+
+.resturant-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.resturant-name-location-Evaluation {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resturant-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.resturant-card {
+    background-color: rgba(94, 149, 92, 0.9); 
+    margin: 15px;
+    padding-top: 20px; 
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    border-radius: 10px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.resturant-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.food-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.food-resturant-item {
+    background-color: #fff;
+    margin: 10px;
+    flex: 1 1 23%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-food-name {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.header3-food {
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+.paragraph-food
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .resturant-info {
+        flex-direction: column;
+    }
+
+    .resturant-card {
+        margin: 10px 0;
+    }
+
+    .food-resturant-item {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .food-resturant-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .resturant-info {
+        width: 100%;
+    }
+
+    .resturant-card {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .food-resturant-item {
+        padding: 10px;
+        margin: 5px 0;
+    }
+}

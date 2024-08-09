@@ -1,0 +1,73 @@
+.SecondNavbar {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.LogoSecondNavbar .logoImage-Navbar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.LinksRouter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.LinksRouter .SecondNavbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.LinksRouter .SecondNavbar-link:hover {
+    color: rgb(222, 168, 62);
+    text-decoration: underline;
+}
+
+.profileSecondNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.profileSecondNavbar .profileImage-Navbar {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .SecondNavbar {
+        flex-direction: column;
+    }
+
+    .LinksRouter {
+        margin-top: 0;
+    }
+
+    .LinksRouter .SecondNavbar-link {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .profileSecondNavbar {
+        width: 35px;
+        height: 35px;
+    }
+}

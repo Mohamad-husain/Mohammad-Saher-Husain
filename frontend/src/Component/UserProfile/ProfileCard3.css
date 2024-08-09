@@ -1,0 +1,31 @@
+.l-cardAccount3 {
+    width: 90%; 
+    max-width: 480px; 
+    height: auto;
+    background: #f5f5f5;
+    color: #272727;
+    padding: 5%; 
+    box-shadow: 0px 7px 24px rgba(100, 100, 100, 0.4);
+    margin: 40px auto; 
+}
+
+.l-cardtextAmeer {
+    font-size: 2rem; 
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    color: #3f3f55;
+    text-align: center; 
+}
+
+.writeAmeer,
+.cameraAmeer {
+    margin-top: 2rem; 
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subAmeer {
+    margin-left: 0.5rem; 
+}

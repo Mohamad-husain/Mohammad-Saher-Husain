@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sacramento');
+
+:root {
+  --spacing-medium: 1.6rem;
+  --spacing-small: calc(var(--spacing-medium) * 0.5);
+  --spacing-smedium: calc(var(--spacing-medium) * 0.707);
+  --spacing-large: calc(var(--spacing-medium) * 2);
+  --spacing-xlarge: calc(var(--spacing-medium) * 4);
+  --spacing-xxlarge: calc(var(--spacing-medium) * 8);
+  --box-size: var(--spacing-xxlarge);
+
+  --color-text: #404646;
+}
+
+
+.main-container {
+  margin: var(--spacing-medium) var(--spacing-small);
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-gap: var(--spacing-smedium);
+  grid-template-columns: repeat(auto-fit, var(--box-size));
+  grid-auto-rows: var(--box-size);
+  grid-auto-flow: dense;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.card_footnotes {
+  grid-row: auto / span 1;
+  grid-column: auto / span 1;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+}
+
+
+.card__image {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.card__image img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+
+#img_cardfood {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card-hover__title{
+  font-weight: 80 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-hover {
+  width: 190px; 
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.card_rees11{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  min-width: 500px;
+}
+
+
+.Head_card_res{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  max-width: 1180px; 
+  margin: auto; 
+  min-width: 550px;
+  margin-top: 20px;
+  padding: 20px; 
+  background-color: #f6e868; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 20px auto; 
+  max-width: 1000px;
+}
+
+
+
+.card-hover:hover .card-hover__content {
+  background-color: #DEE8C2;
+  bottom: 100%;
+  transform: translateY(100%);
+  padding: 20px 30px;
+  transition: all 0.35s cubic-bezier(.1, .72, .4, .97);
+}
+
+.card-hover:hover .card-hover__link {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: all 0.3s 0.35s cubic-bezier(.1, .72, .4, .97);
+}
+
+.card-hover:hover img {
+  transform: scale(1);
+  transition: 0.35s 0.1s transform cubic-bezier(.1, .72, .4, .97);
+}
+
+.card-hover__content {
+  width: 100%;
+  text-align: center;
+  background-color: #86B971;
+  padding: 0 60px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.35s 0.35s cubic-bezier(.1, .72, .4, .97);
+  will-change: bottom, padding;
+  z-index: 1;
+  padding: 5px 20px 15px;
+
+}
+
+.card-hover__content::before, .card-hover__content::after {
+  content: '';
+  width: 100%;
+  height: 110px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.card-hover__content::before {
+  top: -70px;
+  clip-path: ellipse(60% 80px at bottom center);
+}
+
+.card-hover__content::after {
+  bottom: -70px;
+  clip-path: ellipse(60% 70px at top center);
+}
+
+.card-hover__title {
+  font-size: 1rem; 
+  margin-bottom: 0.7em;
+}
+
+.card-hover__title span {
+  color: #2d7f0b;
+}
+
+.card-hover__text {
+  font-size: 0.5rem;
+}
+
+.card-hover__link {
+  position: absolute;  
+  top: 50%;            
+  left: 50%;           
+  transform: translate(-50%, -50%); 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  text-decoration: none;
+  color: #2d7f0b;
+  opacity: 0;
+  padding: 40px;
+  transition: all 0.35s;
+}
+
+
+.card-hover__link:hover svg {
+  transform: translateX(4px);
+}
+
+.card-hover__link svg {
+  width: 18px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+
+.card-hover__extra {
+  height: 50%;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.2rem;
+  text-align: center;
+  background-color: #86b971;
+  padding: 5px;
+  bottom: 0;
+  z-index: 0;
+  color: #dee8c2;
+  transform: translateY(100%);
+  will-change: transform;
+  transition: transform 0.35s;
+}
+
+.card-hover__extra span {
+  color: #2d7f0b;
+}
+
